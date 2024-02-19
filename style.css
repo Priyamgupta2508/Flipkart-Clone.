@@ -175,13 +175,12 @@ body{
     display: flex; 
     flex-direction: column;/* Enable flexbox for child elements */
     justify-content: space-between; /* Horizontally center content within item */
-    /* align-items: center; Horizontally center content within item */
     border: 1px solid #ccc;
     border-radius: 3px;
 }
 
 .item-1-image{
-    background-color: transparent; /* Example background color */
+    background-color: transparent; 
     flex: 1; /* This makes the image div occupy remaining space */
     margin-left: 0px; /* Left margin */
     margin-right: 3px; /* Right margin */
