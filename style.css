@@ -1,0 +1,586 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F1F2F4;
+}
+
+.navbar{
+    height: 70px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-logo{
+    margin-left: 20px;
+    height: 70px;
+    width: 150px;
+}
+
+/*----F-Plus logo------*/
+
+.logo{
+    background-image: url(images/Screenshot\ 2024-02-10\ 153802.png);
+    background-size: cover;
+    height: 60px;
+    margin-top: 8px;
+}
+
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F0F5FF;
+    width: 550px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.search-logo{
+    width: 45px;
+    background-color: #F0F5FF;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #0f1111;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.search-bar{
+    background-color: #F0F5FF;
+    border: none;
+    width: 100%;
+    font-size: 1.5rem;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.profile{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.profile-logo{
+    width: 20px;
+    font-size: 1.2rem;
+}
+
+.cart{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.cart-logo{
+    width: 30px;
+}
+
+.seller{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.seller-logo{
+    width: 30px;
+}
+
+.more{
+    font-size: 1rem;
+    margin-top: 30px;
+}
+
+.categories {
+    background-color: white;
+    color: black;
+    height: 135px;
+    display: flex;
+    justify-content: space-evenly; /* Adjust alignment as needed */
+    align-items: center; /* Adjust alignment as needed */
+    font-size: 0.85rem;
+    margin-top: 8px;
+    margin-left: 12px;
+    margin-right: 10px;
+    width: 98%;
+}
+
+.categories .image-container {
+    text-align: center; 
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.categories img{
+    max-width: 80px; 
+    height: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.hero-image{
+    background-color: #ffffff;
+    color: black;
+    height: 200px;
+    margin-top: 15px;
+    margin-left: 12px;
+    margin-right: 10px;
+    width: 98%;
+    background-image: url(images/Hero\ image\ \ 2.jpg);
+    background-size: contain;
+}
+
+.shop-1{
+    background-color: transparent;
+    color: #0f1111;
+    height: 350px;
+    display: flex;
+}
+
+.shop-1-1{
+    background-color: white;
+    height: 350px;
+    margin-top: 15px;
+    margin-left: 12px;
+    width: calc(82% - 15px); 
+    margin-right: 15px; 
+    margin-bottom: 0px;
+    padding: 10px;
+    color: #0f1111;
+    height: auto; /* Change height to auto for dynamic content */
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for child elements */
+    justify-content: space-between;
+}
+
+.item-1{
+    background-color: white;
+    height: 220px;
+    width: calc(16.66% - 1px); /* Adjusted width calculation for six items */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 5px;/* Add right margin between item divs */
+    display: flex; 
+    flex-direction: column;/* Enable flexbox for child elements */
+    justify-content: space-between; /* Horizontally center content within item */
+    /* align-items: center; Horizontally center content within item */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.item-1-image{
+    background-color: transparent; /* Example background color */
+    flex: 1; /* This makes the image div occupy remaining space */
+    margin-left: 0px; /* Left margin */
+    margin-right: 3px; /* Right margin */
+    height: auto; /* Set height to auto to maintain aspect ratio */
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+}
+
+.description-1{
+    background-color: white;
+    height: 40px;
+    width: 100%;
+    margin-top: auto;
+    margin-right: 3px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.item-1-image:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+.heading-1{
+    background-color: white;
+    color: black;
+    height: 40px;
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.shop-1-2 {
+    background-color: white;
+    height: 335px;
+    margin: 15px auto;/* Adjusted margin-left to remove the space */
+    width: calc(18% - 15px); /* Adjusted width for shop2 */
+    overflow: hidden;
+}
+
+.shop-1-2 img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; 
+    margin: 0; 
+    padding: 0; 
+    margin-top: 0;
+    display: block;
+    cursor: pointer;
+}
+
+.shop-2{
+    background-color: white;
+    color: #0f1111;
+    height: auto; /* Change height to auto for dynamic content */
+    margin-top: 15px;
+    margin-left: 12px;
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for child elements */
+    justify-content: space-between;
+}
+
+.heading{
+    background-color: white;
+    color: black;
+    height: 40px;
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.item{
+    background-color: white;
+    height: 220px;
+    width: calc(16.666% - 15px); /* Adjusted width calculation for six items */
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-right: 10px;/* Add right margin between item divs */
+    display: flex; 
+    flex-direction: column;/* Enable flexbox for child elements */
+    justify-content: center; /* Horizontally center content within item */
+    align-items: center; /* Horizontally center content within item */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.item-image{
+   background-color: transparent;
+   width: 70%; /* Set width of the image */
+   margin-top: 10px;
+   height: calc(100% - 15px);
+   background-size: contain; 
+   background-repeat: no-repeat;
+   justify-content: center;
+   align-items: center;
+   transition: transform 0.3s ease;
+   cursor: pointer ;/* Calculate height for the image, considering margin and description height */
+}
+
+.item-image:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+.description{
+    background-color: white;
+    height: 40px;
+    width: 100%;
+    margin-top: auto;
+    margin-right: 3px;
+    margin-left: 3px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.shop-3{
+    background-color: transparent;
+    color: #0f1111;
+    height: 600px;
+    display: flex;
+    margin-top: 15px;
+    margin-left: 12px;
+    margin-bottom: 15px;
+}
+
+.shop-3-1 {
+    background-color: white;
+    width: 35%; /* Adjusted width to fit all items in a single row */
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex; /* Enable flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: space-between; 
+}
+
+.item3{
+    background-color: white;
+    height: 220px;
+    width: calc(50% - 15px); /* Adjusted width calculation for six items */
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-right: 10px;/* Add right margin between item divs */
+    display: flex; 
+    flex-direction: column;/* Enable flexbox for child elements */
+    justify-content: center; /* Horizontally center content within item */
+    align-items: center; /* Horizontally center content within item */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.item-3-description h5 {
+    color: green;
+}
+
+.shop-3-2 {
+    background-color: white;
+    width: calc(65% - 20px); 
+    box-sizing: border-box;
+    margin-left: 20px;
+    background-image: url("images/mobilebig image.jpg"); /* Corrected image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.shop-5{
+    background-color: white;
+    color: #0f1111;
+    height: auto; /* Change height to auto for dynamic content */
+    margin-top: 15px;
+    margin-left: 12px;
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for child elements */
+    justify-content: space-between;
+}
+
+.shop-6{
+    background-color: white;
+    color: #0f1111;
+    height: auto; /* Change height to auto for dynamic content */
+    margin-top: 15px;
+    margin-left: 12px;
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for child elements */
+    justify-content: space-between;
+}
+
+
+/*------------FOOTER----------*/
+
+.panel-1{
+    background-color: #F5F5F5;
+    height: 1000px;
+    margin-top: 40px;
+    font-weight: 600;
+    padding: 30px; 
+}
+
+.panel-1 p{
+    color: #565656;
+}
+
+.most-searched{
+    font-weight: 100;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.most-searched p{
+    margin-bottom: 20px;
+}
+
+.panel-2{
+    background-color: #212121;
+    height: 280px;
+    color: white;
+    font-weight: 600;
+    justify-content: space-between;
+    display: flex;
+}
+
+.separator-line {
+    height: 1px;
+    background-color: #454D5E;
+    width: 100%;
+    margin-top: -1px;
+}
+
+ul{
+    margin-top: 40px;
+}
+
+ul p{
+    color: #878787;
+    font-weight: 100;
+    font-size: 0.75rem;
+}
+
+ul a{
+    display: block;
+    font-size: 0.75rem;
+    margin-top: 10px;
+    color: white;
+}
+
+.mail-us{
+    margin-top: 40px;
+}
+
+.mail-us-heading {
+    font-weight: 100;
+    color: #878787; 
+    font-size: 0.75rem;
+  }
+
+.mail-us p{
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.social-heading{
+    margin-top: auto;
+    font-weight: 100;
+    color: #878787; 
+    font-size: 0.75rem;
+}
+
+.social-logos{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.address{
+    margin-top: 40px;
+}
+
+.address-heading{
+    font-weight: 100;
+    color: #878787; 
+    font-size: 0.75rem;
+}
+
+.address p{
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.panel-3{
+    background-color: #212121;
+    height: 60px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 0.75rem;
+}
+
+.seller-footer{
+    font-size: 0.75rem;
+    margin-left: 15px;
+    display: flex;
+    margin: 25px;
+    align-items: center;
+}
+
+.seller-footer-logo{
+    color: #FDD835;
+    font-size: 0.75rem;
+    margin-left: 15px;
+    margin-right: 10px;
+    display: flex;
+}
+
+.advertise-footer{
+    font-size: 0.75rem;
+    margin-left: 15px;
+    display: flex;
+    margin: 25px;
+    align-items: center;
+}
+
+.advertise-footer-logo{
+    color: #FDD835;
+    font-size: 0.75rem;
+    margin-left: 15px;
+    margin-right: 10px;
+    display: flex;
+}
+
+.gift-footer{
+    font-size: 0.75rem;
+    margin-left: 15px;
+    display: flex;
+    margin: 25px;
+    align-items: center;
+}
+
+.gift-footer-logo{
+    color: #FDD835;
+    font-size: 0.75rem;
+    margin-left: 15px;
+    margin-right: 10px;
+    display: flex;
+}
+
+.help-footer{
+    font-size: 0.75rem;
+    margin-left: 15px;
+    display: flex;
+    margin: 25px;
+    align-items: center;
+}
+
+.help-footer-logo{
+    color: #FDD835;
+    font-size: 0.75rem;
+    margin-left: 15px;
+    margin-right: 10px;
+    display: flex;
+}
+
+.copyright-footer{
+    font-size: 0.80rem;
+    margin-left: 15px;
+    display: flex;
+    margin: 25px;
+    align-items: center;
+    font-weight: 500;
+}
+
+.copyright-footer-logo{
+    color: white;
+    font-size: 0.80rem;
+    margin-left: 15px;
+    margin-right: 10px;
+    display: flex;
+}
+
+.payment-footer img{
+    font-size: 0.80rem;
+    margin-left: 15px;
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+}
+
